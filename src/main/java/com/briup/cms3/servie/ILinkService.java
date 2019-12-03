@@ -5,4 +5,6 @@ import com.briup.cms3.exception.CustomerException;
 
 public interface ILinkService {
     void addLink(Link link) throws CustomerException;
+
+    void delectLink(int id) throws CustomerException;
 }

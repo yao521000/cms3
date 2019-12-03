@@ -23,4 +23,11 @@ public class LinkServiceImpl implements ILinkService {
         linkDao.save(link);
 
     }
+
+    @Override
+    public void delectLink(int id) throws CustomerException {
+        linkDao.deleteById(id);
+    }
+
+
 }
