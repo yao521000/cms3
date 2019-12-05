@@ -23,7 +23,6 @@ public class LinkServiceImpl implements ILinkService {
             throw new CustomerException(CodeUtil.BAD_CODE,"参数为空");
         }
         linkDao.save(link);
-
     }
 
     @Override

@@ -1,16 +1,25 @@
 package com.briup.cms3.bean;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
+
 import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
 @Table(name = "cms_category")
+@ApiModel
 public class Category implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @ApiModelProperty(value = "栏目Id")
     private int id;
+
+    @ApiModelProperty(value = "栏目编码"，required = true)
     private long code;
+
+    @ApiModelProperty(value = "栏目名字",required = false)
     private String name;
 
     public int getId() {
