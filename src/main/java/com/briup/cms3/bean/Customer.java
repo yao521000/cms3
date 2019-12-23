@@ -6,6 +6,7 @@ import java.io.Serializable;
 @Entity
 @Table(name = "cms_customer")
 public class Customer implements Serializable {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
